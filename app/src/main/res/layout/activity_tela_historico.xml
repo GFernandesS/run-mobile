@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.tela_historico">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="599dp"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/lblHistorico"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Percursos anteriores" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="57dp"
+        android:onClick="onClickVoltar"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+</RelativeLayout>
